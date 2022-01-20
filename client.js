@@ -18,6 +18,11 @@ const connect = function () {
   conn.on('Name', () => {
     conn.write('Name: MGS')
   })
+  
+  // conn.on('Move: up', () => {
+  //   conn.write("Move: up")
+  // })
+
 
   // interpret incoming data as text
   conn.setEncoding("utf8");
